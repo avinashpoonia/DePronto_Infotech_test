@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DePronto infotech</title>
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- local files -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 style="color: brown; text-align: center">Introduction</h1>
+    <!-- silde show -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imgs/image1.jpg" class="d-block w-100" alt="image1" />
+        </div>
+        <div class="carousel-item">
+          <img src="./imgs/image2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./imgs/image3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- todos -->
+    <h1 style="text-align: center; color: brown">Todos</h1>
+    <!-- table for showing data -->
+    <table class="table" id="todos"></table>
+
+    <h1 style="text-align: center; color: brown">Feedback form</h1>
+    <form action="">
+      <!-- feedback form -->
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="name" class="col-form-label">Name</label>
+        </div>
+        <div class="col-auto">
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Name"
+          />
+        </div>
+
+        <!-- date -->
+        <div class="col-auto">
+          <label for="date" class="col-form-label">Date</label>
+        </div>
+        <div class="col-auto">
+          <input type="date" id="date" class="form-control" />
+        </div>
+
+        <!-- feedback title  -->
+        <div class="col-auto">
+          <label for="title" class="col-form-label">Feedback title</label>
+        </div>
+        <div class="col-auto">
+          <input
+            type="text"
+            id="title"
+            class="form-control"
+            placeholder="Feedback title"
+          />
+        </div>
+
+        <!-- message box  -->
+
+        <div class="col-auto">
+          <label for="msgbox" class="col-form-label">Message box</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="msgbox" class="form-control" />
+        </div>
+
+        <!-- checkbox -->
+        <div class="col-auto">
+          <label for="html" class="col-form-label">i love html</label>
+        </div>
+        <div class="col-auto">
+          <input type="checkbox" id="html" value="html" />
+        </div>
+
+        <div class="col-auto">
+          <label for="css" class="col-form-label">i love css</label>
+        </div>
+        <div class="col-auto">
+          <input type="checkbox" id="css" value="css" />
+        </div>
+
+        <!-- radio  -->
+        <p>Gender</p>
+        <div class="col-auto">
+          <label for="male" class="col-form-label">male</label>
+        </div>
+        <div class="col-auto">
+          <input type="radio" id="male" value="male" />
+        </div>
+
+        <div class="col-auto">
+          <label for="female" class="col-form-label">female</label>
+        </div>
+        <div class="col-auto">
+          <input type="radio" id="female" value="female" />
+        </div>
+
+        <!-- button  -->
+        <button type="button" class="btn btn-info">Submit</button>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- my js files -->
+    <script src="./fetchdata.js"></script>
+    <script src="./form.js"></script>
+  </body>
+</html>
